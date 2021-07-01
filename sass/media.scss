@@ -1,0 +1,51 @@
+@media (max-width: 575.98px) {
+  section.apple .grandfather .father .up .second .sibling .elder img {
+    width: 50%;
+    transform: translate(90%, 15%);
+    z-index: 5;
+  }
+
+  section.ball .grandmother .mother {
+    transform: translate(-50%, 85%);
+  }
+
+  section.ball .grandmother .mother .down .third .sibling .elder img {
+    width: 50%;
+    position: absolute;
+    transform: translate(15%, -30%);
+  }
+  section.apple .grandfather .father .up .second .sibling .younger img {
+    width: 60px;
+    height: 60px;
+    transform: translate(270%, 60%);
+  }
+
+  section.ball .grandmother .mother .down .third .sibling .elder img {
+    top: 50%;
+    right: 0%;
+    width: 50%;
+    transform: translate(-5%, -75%);
+  }
+
+  section.ball .grandmother .mother .down .third .sibling .younger img {
+    right: 0;
+    bottom: -50px;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, 20%);
+  }
+  section.apple .grandfather .father .up .first h1,
+  section.ball .grandmother .mother .down .forth h1 {
+    font-size: 50px;
+  }
+  section.apple .grandfather .father .up .first p,
+  section.ball .grandmother .mother .down .forth p {
+    font-size: 25px;
+  }
+  section.ball .grandmother .mother .down .forth {
+    order: -1;
+  }
+  section.ball .grandmother .mother .down .third {
+    order: 0;
+  }
+}

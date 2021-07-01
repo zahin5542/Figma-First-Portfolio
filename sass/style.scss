@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;900&display=swap");
+
+// font-family: 'Bebas Neue', cursive;
+// font-family: 'Poppins', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Bebas Neue", cursive;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+%flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+$themeColor: #fff;
+
+%h1 {
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 700;
+  color: #2c2c2c;
+  letter-spacing: 2.5px;
+  line-height: 20px;
+}
+%p {
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #333 !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+%btn {
+  background-color: #dc3545 !important;
+  padding: 20px 30px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: 2.5px;
+}
+%animation {
+  animation: myAnimation 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes myAnimation {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+header {
+  .navbar {
+    z-index: 999;
+    ul {
+      .nav-link {
+        display: block;
+        font-size: 25px;
+        color: #333;
+        margin: 0px 10px;
+        letter-spacing: 1.5px;
+        border-radius: 10px;
+        &:hover {
+          background: black;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+section.apple {
+  .grandfather {
+    position: relative;
+    .father {
+      height: 800px;
+      z-index: 998;
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -5%);
+      .up {
+        @extend %flex;
+        .first {
+          float: left;
+          margin: 150px 0px;
+          h1 {
+            @extend %h1;
+          }
+          span {
+            text-transform: uppercase;
+            font-size: 80px;
+            font-weight: 700;
+            color: #ff8367;
+            letter-spacing: 3.5px;
+          }
+          p {
+            @extend %p;
+          }
+          .btn {
+            @extend %btn;
+          }
+        }
+        .second {
+          float: right;
+          .sibling {
+            position: relative;
+            .elder {
+              position: relative;
+              img {
+                width: 70%;
+                position: absolute;
+                bottom: 50%;
+                right: 50%;
+                transform: translate(50%, 55%);
+                z-index: 5;
+              }
+            }
+            .younger img {
+              position: absolute;
+              width: 100px;
+              height: 100px;
+              bottom: 180%;
+              right: 20%;
+              z-index: 6;
+              opacity: 0;
+              &:hover {
+                opacity: 1;
+                @extend %animation;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section.ball {
+  .grandmother {
+    position: relative;
+    .mother {
+      height: 800px;
+      z-index: 999;
+      position: absolute;
+      width: 100%;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, 70%);
+      .down {
+        @extend %flex;
+        .third {
+          float: left;
+          .sibling {
+            position: relative;
+            .elder img {
+              width: 70%;
+              position: absolute;
+              bottom: 50%;
+              right: 50%;
+              transform: translate(30%, 55%);
+              z-index: 5;
+            }
+            .younger img {
+              position: absolute;
+              width: 100px;
+              height: 100px;
+              bottom: 50%;
+              right: 80%;
+              transform: translate(-10%, 280%);
+              z-index: 6;
+            }
+          }
+        }
+        .forth {
+          float: right;
+          margin-top: 50px;
+          h1 {
+            @extend %h1;
+            margin: 20px 10px;
+          }
+          p {
+            @extend %p;
+            font-size: 20px;
+            padding: 20px 10px;
+          }
+          .btn {
+            @extend %btn;
+            span {
+              .fas {
+                color: #fff !important;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
