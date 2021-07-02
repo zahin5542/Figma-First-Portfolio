@@ -90,11 +90,39 @@ $themeColor: #fff;
 }
 
 header {
+  nav {
+    .menuToggle {
+      width: 50px;
+      padding: 0;
+      border: 0;
+      span {
+        display: block;
+        width: 70px;
+        height: 5px;
+        background: #333;
+        margin: auto;
+        margin-bottom: 5px;
+        transition-duration: 0.3s;
+      }
+      span:first-child {
+        width: 50%;
+      }
+      span:last-child {
+        width: 30%;
+      }
+      &:focus {
+        box-shadow: 0 0 0 0;
+      }
+      &:hover span {
+        width: 100%;
+      }
+    }
+  }
   .navbar {
     z-index: 999;
     ul {
       .nav-link {
-        display: block;
+        display: inline-block;
         font-size: 25px;
         color: #333;
         margin: 0px 10px;
@@ -272,7 +300,6 @@ header {
         }
         .only_card {
           border-radius: 15px;
-          text-align: center;
           &:hover,
           &:focus {
             box-shadow: 3px 3px 20px 0px #3d3939, 0px 0px 11px 0px #575151;
@@ -336,9 +363,8 @@ header {
           h1 {
             position: absolute;
             bottom: 120px;
-            position: absolute;
             left: 10px;
-            color: #fff;
+            color: #cb0b0b;
             transition: all 0.3s linear;
             z-index: 8;
             opacity: 0;

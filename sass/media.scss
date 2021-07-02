@@ -61,7 +61,7 @@
   .chat .grandfather .father {
     position: absolute;
     width: 100%;
-    top: 3550px;
+    top: 3400px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -74,8 +74,75 @@
   }
 
   footer .grandfather .father {
-    position: absolute;
-    top: 3800px;
+    top: 3500px;
     padding: 40px;
+  }
+}
+
+/* Large devices(md) (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .ball .grandmother .mother .down .third .sibling .younger img {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+  }
+  .course .grandfather .father .design .card_anim h3 {
+    top: 170px;
+    left: 100px;
+  }
+  .course .grandfather .father .design .card_anim h1 {
+    bottom: 150px;
+  }
+  .chat .grandfather .father .banner h1 {
+    top: 80px;
+  }
+}
+
+/* Medium devices(sm) (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .apple .grandfather .father .second .sibling .younger img {
+    width: 70px;
+    height: 70px;
+    top: 100px;
+    right: 60px;
+  }
+
+  .ball .grandmother .mother .down .third .sibling .younger img {
+    width: 70px;
+    height: 70px;
+    top: 100px;
+    left: 0px;
+  }
+  .course .grandfather .father .design .card_anim h3 {
+    top: 200px;
+    left: 60px;
+  }
+  .course .grandfather .father .design .card_anim h1 {
+    bottom: 175px;
+  }
+  .chat .grandfather .father .banner h1 {
+    top: 50px;
+    left: 80px;
+  }
+}
+
+/****** Extra extra small devices (s6 mobiles, 375px and below) *******/
+@media (min-width: 321px) and (max-width: 376px) {
+  .apple .grandfather .father .up .second .sibling .younger img {
+    width: 50px !important;
+    height: 50px !important;
+    top: -10px !important;
+    right: 15px !important;
+  }
+  .course .grandfather .father {
+    top: 1700px !important;
+  }
+  .chat .grandfather .father {
+    top: 3580px;
+  }
+  .chat .banner h1 {
+    font-size: 25px !important;
+    top: 25px !important;
+    left: 25px !important;
   }
 }

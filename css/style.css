@@ -112,12 +112,46 @@ li {
   }
 }
 
+header nav .menuToggle {
+  width: 50px;
+  padding: 0;
+  border: 0;
+}
+
+header nav .menuToggle span {
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: #333;
+  margin: auto;
+  margin-bottom: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+header nav .menuToggle span:first-child {
+  width: 50%;
+}
+
+header nav .menuToggle span:last-child {
+  width: 30%;
+}
+
+header nav .menuToggle:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+}
+
+header nav .menuToggle:hover span {
+  width: 100%;
+}
+
 header .navbar {
   z-index: 999;
 }
 
 header .navbar ul .nav-link {
-  display: block;
+  display: inline-block;
   font-size: 25px;
   color: #333;
   margin: 0px 10px;
@@ -290,7 +324,6 @@ header .navbar ul .nav-link:hover {
 
 .course .grandfather .father .design .only_card {
   border-radius: 15px;
-  text-align: center;
 }
 
 .course .grandfather .father .design .only_card:hover, .course .grandfather .father .design .only_card:focus {
@@ -373,9 +406,8 @@ header .navbar ul .nav-link:hover {
 .course .grandfather .father .design .card_anim h1 {
   position: absolute;
   bottom: 120px;
-  position: absolute;
   left: 10px;
-  color: #fff;
+  color: #cb0b0b;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   z-index: 8;
