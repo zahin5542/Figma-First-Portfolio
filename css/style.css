@@ -32,7 +32,13 @@ li {
   padding: 0;
 }
 
-section.apple .grandfather .father .up, section.ball .grandmother .mother .down {
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  padding: 0px 20px;
+}
+
+.apple .grandfather .father .up, .ball .grandmother .mother .down, .course .grandfather .father .heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +52,7 @@ section.apple .grandfather .father .up, section.ball .grandmother .mother .down 
           align-items: center;
 }
 
-section.apple .grandfather .father .up .first h1, section.ball .grandmother .mother .down .forth h1 {
+.apple .grandfather .father .up .first h1, .ball .grandmother .mother .down .forth h1 {
   text-transform: uppercase;
   font-size: 80px;
   font-weight: 700;
@@ -55,7 +61,7 @@ section.apple .grandfather .father .up .first h1, section.ball .grandmother .mot
   line-height: 20px;
 }
 
-section.apple .grandfather .father .up .first p, section.ball .grandmother .mother .down .forth p {
+.apple .grandfather .father .up .first p, .ball .grandmother .mother .down .forth p {
   margin-bottom: 50px;
   font-size: 30px;
   font-weight: 400;
@@ -63,7 +69,7 @@ section.apple .grandfather .father .up .first p, section.ball .grandmother .moth
   font-family: "Poppins", sans-serif !important;
 }
 
-section.apple .grandfather .father .up .first .btn, section.ball .grandmother .mother .down .forth .btn {
+.apple .grandfather .father .up .first .btn, .ball .grandmother .mother .down .forth .btn {
   background-color: #dc3545 !important;
   padding: 20px 30px;
   border: 0;
@@ -72,9 +78,11 @@ section.apple .grandfather .father .up .first .btn, section.ball .grandmother .m
   letter-spacing: 2.5px;
 }
 
-section.apple .grandfather .father .up .second .sibling .younger img:hover {
-  -webkit-animation: myAnimation 2s;
-          animation: myAnimation 2s;
+.course .grandfather .father .design .card_anim .box img {
+  -webkit-animation: myAnimation;
+          animation: myAnimation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -85,23 +93,23 @@ section.apple .grandfather .father .up .second .sibling .younger img:hover {
 
 @-webkit-keyframes myAnimation {
   from {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-  to {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 
 @keyframes myAnimation {
   from {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-  to {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 
@@ -123,11 +131,11 @@ header .navbar ul .nav-link:hover {
   color: #fff;
 }
 
-section.apple .grandfather {
+.apple .grandfather {
   position: relative;
 }
 
-section.apple .grandfather .father {
+.apple .grandfather .father {
   height: 800px;
   z-index: 998;
   position: absolute;
@@ -138,12 +146,12 @@ section.apple .grandfather .father {
           transform: translate(-50%, -5%);
 }
 
-section.apple .grandfather .father .up .first {
+.apple .grandfather .father .up .first {
   float: left;
   margin: 150px 0px;
 }
 
-section.apple .grandfather .father .up .first span {
+.apple .grandfather .father .up .first span {
   text-transform: uppercase;
   font-size: 80px;
   font-weight: 700;
@@ -151,19 +159,19 @@ section.apple .grandfather .father .up .first span {
   letter-spacing: 3.5px;
 }
 
-section.apple .grandfather .father .up .second {
+.apple .grandfather .father .up .second {
   float: right;
 }
 
-section.apple .grandfather .father .up .second .sibling {
+.apple .grandfather .father .up .second .sibling {
   position: relative;
 }
 
-section.apple .grandfather .father .up .second .sibling .elder {
+.apple .grandfather .father .up .second .sibling .elder {
   position: relative;
 }
 
-section.apple .grandfather .father .up .second .sibling .elder img {
+.apple .grandfather .father .up .second .sibling .elder img {
   width: 70%;
   position: absolute;
   bottom: 50%;
@@ -173,25 +181,20 @@ section.apple .grandfather .father .up .second .sibling .elder img {
   z-index: 5;
 }
 
-section.apple .grandfather .father .up .second .sibling .younger img {
+.apple .grandfather .father .up .second .sibling .younger img {
   position: absolute;
   width: 100px;
   height: 100px;
-  bottom: 180%;
-  right: 20%;
+  top: 170px;
+  right: 90px;
   z-index: 6;
-  opacity: 0;
 }
 
-section.apple .grandfather .father .up .second .sibling .younger img:hover {
-  opacity: 1;
-}
-
-section.ball .grandmother {
+.ball .grandmother {
   position: relative;
 }
 
-section.ball .grandmother .mother {
+.ball .grandmother .mother {
   height: 800px;
   z-index: 999;
   position: absolute;
@@ -202,15 +205,15 @@ section.ball .grandmother .mother {
           transform: translate(-50%, 70%);
 }
 
-section.ball .grandmother .mother .down .third {
+.ball .grandmother .mother .down .third {
   float: left;
 }
 
-section.ball .grandmother .mother .down .third .sibling {
+.ball .grandmother .mother .down .third .sibling {
   position: relative;
 }
 
-section.ball .grandmother .mother .down .third .sibling .elder img {
+.ball .grandmother .mother .down .third .sibling .elder img {
   width: 70%;
   position: absolute;
   bottom: 50%;
@@ -220,33 +223,97 @@ section.ball .grandmother .mother .down .third .sibling .elder img {
   z-index: 5;
 }
 
-section.ball .grandmother .mother .down .third .sibling .younger img {
+.ball .grandmother .mother .down .third .sibling .younger img {
   position: absolute;
   width: 100px;
   height: 100px;
-  bottom: 50%;
-  right: 80%;
-  -webkit-transform: translate(-10%, 280%);
-          transform: translate(-10%, 280%);
+  top: 200px;
+  left: -15px;
   z-index: 6;
 }
 
-section.ball .grandmother .mother .down .forth {
+.ball .grandmother .mother .down .forth {
   float: right;
   margin-top: 50px;
 }
 
-section.ball .grandmother .mother .down .forth h1 {
+.ball .grandmother .mother .down .forth h1 {
   margin: 20px 10px;
 }
 
-section.ball .grandmother .mother .down .forth p {
+.ball .grandmother .mother .down .forth p {
   font-size: 20px;
   padding: 20px 10px;
 }
 
-section.ball .grandmother .mother .down .forth .btn span .fas {
+.ball .grandmother .mother .down .forth .btn span .fas {
   color: #fff !important;
   font-size: 20px;
+}
+
+.course .grandfather {
+  position: relative;
+}
+
+.course .grandfather .father {
+  height: 1200px;
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  top: 1300px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.course .grandfather .father .heading h1 {
+  text-align: center;
+}
+
+.course .grandfather .father .design .only_card .card-img-top {
+  border-radius: 10px;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.course .grandfather .father .design .card_carousel .carousel {
+  width: 100%;
+}
+
+.course .grandfather .father .design .card_carousel .carousel button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50% !important;
+}
+
+.course .grandfather .father .design .card_carousel .carousel .carousel-inner {
+  border-radius: 10px;
+}
+
+.course .grandfather .father .design .card_carousel .carousel .carousel-inner img {
+  border-radius: 10px;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.course .grandfather .father .design .card_anim .box {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.course .grandfather .father .design .card_anim .box img {
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */

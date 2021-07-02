@@ -33,6 +33,13 @@ li {
   margin: 0;
   padding: 0;
 }
+
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  padding: 0px 20px;
+}
+
 %flex {
   display: flex;
   flex-wrap: wrap;
@@ -67,17 +74,18 @@ $themeColor: #fff;
   letter-spacing: 2.5px;
 }
 %animation {
-  animation: myAnimation 2s;
+  animation: myAnimation;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate;
 }
 @keyframes myAnimation {
   from {
-    transform: scale(0.5);
+    transform: scale(1);
   }
   to {
-    transform: scale(1);
+    transform: scale(1.5);
   }
 }
 
@@ -101,7 +109,7 @@ header {
   }
 }
 
-section.apple {
+.apple {
   .grandfather {
     position: relative;
     .father {
@@ -153,14 +161,9 @@ section.apple {
               position: absolute;
               width: 100px;
               height: 100px;
-              bottom: 180%;
-              right: 20%;
+              top: 170px;
+              right: 90px;
               z-index: 6;
-              opacity: 0;
-              &:hover {
-                opacity: 1;
-                @extend %animation;
-              }
             }
           }
         }
@@ -169,7 +172,7 @@ section.apple {
   }
 }
 
-section.ball {
+.ball {
   .grandmother {
     position: relative;
     .mother {
@@ -198,9 +201,8 @@ section.ball {
               position: absolute;
               width: 100px;
               height: 100px;
-              bottom: 50%;
-              right: 80%;
-              transform: translate(-10%, 280%);
+              top: 200px;
+              left: -15px;
               z-index: 6;
             }
           }
@@ -224,6 +226,70 @@ section.ball {
                 color: #fff !important;
                 font-size: 20px;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.course {
+  .grandfather {
+    position: relative;
+    .father {
+      height: 1200px;
+      z-index: 999;
+      position: absolute;
+      width: 100%;
+      top: 1300px;
+      left: 50%;
+      transform: translateX(-50%);
+      .heading {
+        @extend %flex;
+        h1 {
+          text-align: center;
+        }
+      }
+      .design {
+        .only_card {
+          .card-img-top {
+            border-radius: 10px;
+            height: 60vh;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        .card_carousel {
+          .carousel {
+            width: 100%;
+            button {
+              width: 20px;
+              height: 20px;
+              border-radius: 50% !important;
+            }
+            .carousel-inner {
+              border-radius: 10px;
+              img {
+                border-radius: 10px;
+                height: 60vh;
+                object-fit: cover;
+                object-position: center;
+              }
+            }
+          }
+        }
+        .card_anim {
+          .box {
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            img {
+              height: 60vh;
+              object-fit: cover;
+              object-position: center;
+              @extend %animation;
+              border-radius: 5px;
             }
           }
         }
