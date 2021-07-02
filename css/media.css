@@ -1,49 +1,63 @@
 @media (max-width: 575.98px) {
-  section.apple .grandfather .father .up .second .sibling .elder img {
+  .apple .grandfather .father .up .second .sibling .elder img {
     width: 50%;
     -webkit-transform: translate(90%, 15%);
             transform: translate(90%, 15%);
   }
-  section.apple .grandfather .father .up .second .sibling .younger img {
+  .apple .grandfather .father .up .second .sibling .younger img {
     width: 60px;
     height: 60px;
     top: -10px;
     right: 40px;
   }
-  section.ball .grandmother .mother {
+  .ball .grandmother .mother {
     -webkit-transform: translate(-50%, 85%);
             transform: translate(-50%, 85%);
   }
-  section.ball .grandmother .mother .down .third .sibling .elder img {
+  .ball .grandmother .mother .down .third .sibling .elder img {
     top: 50%;
     right: 0%;
     width: 50%;
     -webkit-transform: translate(-5%, -75%);
             transform: translate(-5%, -75%);
   }
-  section.ball .grandmother .mother .down .third .sibling .younger img {
+  .ball .grandmother .mother .down .third .sibling .younger img {
     width: 60px;
     height: 60px;
     left: 190px;
     top: 10px;
   }
-  section.apple .grandfather .father .up .first h1,
-  section.ball .grandmother .mother .down .forth h1 {
+  .apple .grandfather .father .up .first h1,
+  .ball .grandmother .mother .down .forth h1 {
     font-size: 50px;
   }
-  section.apple .grandfather .father .up .first p,
-  section.ball .grandmother .mother .down .forth p {
+  .apple .grandfather .father .up .first p,
+  .ball .grandmother .mother .down .forth p {
     font-size: 25px;
   }
-  section.ball .grandmother .mother .down .forth {
+  .ball .grandmother .mother .down .forth {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
   }
-  section.ball .grandmother .mother .down .third {
+  .ball .grandmother .mother .down .third {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
+  }
+  .course .grandfather .father {
+    top: 1500px;
+  }
+  .card_anim:focus span {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .card_anim:focus h1 {
+    opacity: 1;
+  }
+  .card_anim:focus h3 {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=media.css.map */

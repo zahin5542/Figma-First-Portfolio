@@ -35,7 +35,6 @@ li {
 .row {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
-  padding: 0px 20px;
 }
 
 .apple .grandfather .father .up, .ball .grandmother .mother .down, .course .grandfather .father .heading {
@@ -159,19 +158,19 @@ header .navbar ul .nav-link:hover {
   letter-spacing: 3.5px;
 }
 
-.apple .grandfather .father .up .second {
+.apple .grandfather .father .second {
   float: right;
 }
 
-.apple .grandfather .father .up .second .sibling {
+.apple .grandfather .father .second .sibling {
   position: relative;
 }
 
-.apple .grandfather .father .up .second .sibling .elder {
+.apple .grandfather .father .second .sibling .elder {
   position: relative;
 }
 
-.apple .grandfather .father .up .second .sibling .elder img {
+.apple .grandfather .father .second .sibling .elder img {
   width: 70%;
   position: absolute;
   bottom: 50%;
@@ -181,7 +180,7 @@ header .navbar ul .nav-link:hover {
   z-index: 5;
 }
 
-.apple .grandfather .father .up .second .sibling .younger img {
+.apple .grandfather .father .second .sibling .younger img {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -268,6 +267,35 @@ header .navbar ul .nav-link:hover {
 
 .course .grandfather .father .heading h1 {
   text-align: center;
+  font-size: 40px;
+  letter-spacing: 1.5px;
+}
+
+.course .grandfather .father .heading h1 strong {
+  color: #d33c3c;
+}
+
+.course .grandfather .father .design .card {
+  border: 0 !important;
+  padding: 0px 10px;
+  border-radius: 15px;
+}
+
+.course .grandfather .father .design .card-body h5 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-size: 22px;
+}
+
+.course .grandfather .father .design .only_card {
+  border-radius: 15px;
+  text-align: center;
+}
+
+.course .grandfather .father .design .only_card:hover, .course .grandfather .father .design .only_card:focus {
+  -webkit-box-shadow: 3px 3px 20px 0px #3d3939, 0px 0px 11px 0px #575151;
+          box-shadow: 3px 3px 20px 0px #3d3939, 0px 0px 11px 0px #575151;
 }
 
 .course .grandfather .father .design .only_card .card-img-top {
@@ -277,6 +305,15 @@ header .navbar ul .nav-link:hover {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.course .grandfather .father .design .card_carousel {
+  border-radius: 15px;
+}
+
+.course .grandfather .father .design .card_carousel:hover, .course .grandfather .father .design .card_carousel:focus {
+  -webkit-box-shadow: 3px 3px 20px 0px #3d3939, 0px 0px 11px 0px #575151;
+          box-shadow: 3px 3px 20px 0px #3d3939, 0px 0px 11px 0px #575151;
 }
 
 .course .grandfather .father .design .card_carousel .carousel {
@@ -302,6 +339,62 @@ header .navbar ul .nav-link:hover {
      object-position: center;
 }
 
+.course .grandfather .father .design .card_anim {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.course .grandfather .father .design .card_anim:hover, .course .grandfather .father .design .card_anim:focus {
+  -webkit-box-shadow: 3px 3px 20px 0px #3d3939, 0px 0px 11px 0px #575151;
+          box-shadow: 3px 3px 20px 0px #3d3939, 0px 0px 11px 0px #575151;
+}
+
+.course .grandfather .father .design .card_anim span {
+  position: absolute;
+  top: -25px;
+  right: -35px;
+  width: 200px;
+  font-size: 30px;
+  height: 200px;
+  border-radius: 50%;
+  background: red;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  z-index: 8;
+  opacity: 0;
+}
+
+.course .grandfather .father .design .card_anim h1 {
+  position: absolute;
+  bottom: 120px;
+  position: absolute;
+  left: 10px;
+  color: #fff;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  z-index: 8;
+  opacity: 0;
+}
+
+.course .grandfather .father .design .card_anim h3 {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  top: 200px;
+  left: 150px;
+  border: 5px solid #048b58;
+  background-clip: content-box;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  padding: 15px;
+}
+
 .course .grandfather .father .design .card_anim .box {
   border-radius: 10px;
   position: relative;
@@ -314,6 +407,20 @@ header .navbar ul .nav-link:hover {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  border-radius: 5px;
+  z-index: 7;
+}
+
+.course .grandfather .father .design .card_anim:hover span {
+  opacity: 1;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.course .grandfather .father .design .card_anim:hover h1 {
+  opacity: 1;
+}
+
+.course .grandfather .father .design .card_anim:hover h3 {
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */

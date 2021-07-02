@@ -37,7 +37,7 @@ li {
 .row {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
-  padding: 0px 20px;
+  // padding: 0px 20px;
 }
 
 %flex {
@@ -142,29 +142,29 @@ header {
             @extend %btn;
           }
         }
-        .second {
-          float: right;
-          .sibling {
+      }
+      .second {
+        float: right;
+        .sibling {
+          position: relative;
+          .elder {
             position: relative;
-            .elder {
-              position: relative;
-              img {
-                width: 70%;
-                position: absolute;
-                bottom: 50%;
-                right: 50%;
-                transform: translate(50%, 55%);
-                z-index: 5;
-              }
-            }
-            .younger img {
+            img {
+              width: 70%;
               position: absolute;
-              width: 100px;
-              height: 100px;
-              top: 170px;
-              right: 90px;
-              z-index: 6;
+              bottom: 50%;
+              right: 50%;
+              transform: translate(50%, 55%);
+              z-index: 5;
             }
+          }
+          .younger img {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 170px;
+            right: 90px;
+            z-index: 6;
           }
         }
       }
@@ -249,10 +249,34 @@ header {
         @extend %flex;
         h1 {
           text-align: center;
+          font-size: 40px;
+          letter-spacing: 1.5px;
+          strong {
+            color: #d33c3c;
+          }
         }
       }
       .design {
+        .card {
+          border: 0 !important;
+          padding: 0px 10px;
+          border-radius: 15px;
+        }
+        .card-body {
+          h5 {
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            font-size: 22px;
+          }
+        }
         .only_card {
+          border-radius: 15px;
+          text-align: center;
+          &:hover,
+          &:focus {
+            box-shadow: 3px 3px 20px 0px #3d3939, 0px 0px 11px 0px #575151;
+          }
           .card-img-top {
             border-radius: 10px;
             height: 60vh;
@@ -261,6 +285,11 @@ header {
           }
         }
         .card_carousel {
+          border-radius: 15px;
+          &:hover,
+          &:focus {
+            box-shadow: 3px 3px 20px 0px #3d3939, 0px 0px 11px 0px #575151;
+          }
           .carousel {
             width: 100%;
             button {
@@ -280,6 +309,52 @@ header {
           }
         }
         .card_anim {
+          position: relative;
+          overflow: hidden;
+          border-radius: 15px;
+          &:hover,
+          &:focus {
+            box-shadow: 3px 3px 20px 0px #3d3939, 0px 0px 11px 0px #575151;
+          }
+          span {
+            position: absolute;
+            top: -25px;
+            right: -35px;
+            width: 200px;
+            font-size: 30px;
+            height: 200px;
+            border-radius: 50%;
+            background: red;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            transform: scale(0.5);
+            transition: all 0.3s linear;
+            z-index: 8;
+            opacity: 0;
+          }
+          h1 {
+            position: absolute;
+            bottom: 120px;
+            position: absolute;
+            left: 10px;
+            color: #fff;
+            transition: all 0.3s linear;
+            z-index: 8;
+            opacity: 0;
+          }
+
+          h3 {
+            position: absolute;
+            font-size: 20px;
+            color: white;
+            top: 200px;
+            left: 150px;
+            border: 5px solid #048b58;
+            background-clip: content-box;
+            transition: all 0.3s linear;
+            padding: 15px;
+          }
           .box {
             border-radius: 10px;
             position: relative;
@@ -289,8 +364,18 @@ header {
               object-fit: cover;
               object-position: center;
               @extend %animation;
-              border-radius: 5px;
+              z-index: 7;
             }
+          }
+          &:hover span {
+            opacity: 1;
+            transform: scale(1.5);
+          }
+          &:hover h1 {
+            opacity: 1;
+          }
+          &:hover h3 {
+            opacity: 0;
           }
         }
       }
