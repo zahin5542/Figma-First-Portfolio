@@ -382,3 +382,82 @@ header {
     }
   }
 }
+
+.chat {
+  .grandfather {
+    position: relative;
+    .father {
+      position: absolute;
+      width: 100%;
+      top: 2030px;
+      left: 50%;
+      transform: translateX(-50%);
+      .banner {
+        text-align: center;
+        img {
+          z-index: 10;
+        }
+        h1 {
+          position: absolute;
+          font-size: 64px;
+          font-weight: 700;
+          color: #fff;
+          top: 120px;
+          left: 120px;
+        }
+
+        button {
+          position: absolute;
+          top: 50%;
+          right: 20%;
+          transform: translate(20%, -50%);
+          transition: all 0.4s ease and out;
+          @extend %btn;
+          a {
+            color: #fff;
+          }
+          &:hover {
+            transform: translate(20%, -60%);
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  .grandfather {
+    position: relative;
+    .father {
+      position: absolute;
+      width: 100%;
+      top: 2430px;
+      h5 {
+        font-size: 25px;
+        font-weight: 400;
+        color: #333;
+        text-align: center;
+        line-height: 2px;
+        padding: 10px 0px;
+      }
+      p {
+        font-size: 40px;
+        font-weight: 700;
+        color: #333;
+        letter-spacing: 1.5px;
+        text-align: center;
+        padding: 10px 0px;
+      }
+      ul {
+        @extend %flex;
+        li {
+          text-align: center;
+        }
+        img {
+          width: 50%;
+          margin: auto;
+        }
+      }
+    }
+  }
+}

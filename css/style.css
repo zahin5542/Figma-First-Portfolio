@@ -37,7 +37,7 @@ li {
   --bs-gutter-y: 0;
 }
 
-.apple .grandfather .father .up, .ball .grandmother .mother .down, .course .grandfather .father .heading {
+.apple .grandfather .father .up, .ball .grandmother .mother .down, .course .grandfather .father .heading, footer .grandfather .father ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +68,7 @@ li {
   font-family: "Poppins", sans-serif !important;
 }
 
-.apple .grandfather .father .up .first .btn, .ball .grandmother .mother .down .forth .btn {
+.apple .grandfather .father .up .first .btn, .ball .grandmother .mother .down .forth .btn, .chat .grandfather .father .banner button {
   background-color: #dc3545 !important;
   padding: 20px 30px;
   border: 0;
@@ -422,5 +422,91 @@ header .navbar ul .nav-link:hover {
 
 .course .grandfather .father .design .card_anim:hover h3 {
   opacity: 0;
+}
+
+.chat .grandfather {
+  position: relative;
+}
+
+.chat .grandfather .father {
+  position: absolute;
+  width: 100%;
+  top: 2030px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.chat .grandfather .father .banner {
+  text-align: center;
+}
+
+.chat .grandfather .father .banner img {
+  z-index: 10;
+}
+
+.chat .grandfather .father .banner h1 {
+  position: absolute;
+  font-size: 64px;
+  font-weight: 700;
+  color: #fff;
+  top: 120px;
+  left: 120px;
+}
+
+.chat .grandfather .father .banner button {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  -webkit-transform: translate(20%, -50%);
+          transform: translate(20%, -50%);
+  -webkit-transition: all 0.4s ease and out;
+  transition: all 0.4s ease and out;
+}
+
+.chat .grandfather .father .banner button a {
+  color: #fff;
+}
+
+.chat .grandfather .father .banner button:hover {
+  -webkit-transform: translate(20%, -60%);
+          transform: translate(20%, -60%);
+}
+
+footer .grandfather {
+  position: relative;
+}
+
+footer .grandfather .father {
+  position: absolute;
+  width: 100%;
+  top: 2430px;
+}
+
+footer .grandfather .father h5 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  line-height: 2px;
+  padding: 10px 0px;
+}
+
+footer .grandfather .father p {
+  font-size: 40px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+footer .grandfather .father ul li {
+  text-align: center;
+}
+
+footer .grandfather .father ul img {
+  width: 50%;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
