@@ -463,7 +463,7 @@ header .navbar ul .nav-link:hover {
 .chat .grandfather .father {
   position: absolute;
   width: 100%;
-  top: 2030px;
+  top: 2100px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
