@@ -1,3 +1,100 @@
+/****** Extra extra small devices (376px and below) *******/
+@media (max-width: 376px) {
+  /************apple*************/
+  .apple .grandfather .father .up .first h1,
+  .ball .grandmother .mother .down .forth h1 {
+    font-size: 30px !important;
+  }
+  .apple .grandfather .father .up .first span {
+    font-size: 40px !important;
+  }
+  .apple .grandfather .father .up .first p,
+  .ball .grandmother .mother .down .forth p {
+    font-size: 15px !important;
+  }
+  .apple .grandfather .father .up .first .btn,
+  .ball .grandmother .mother .down .forth .btn,
+  .chat .grandfather .father .banner button {
+    padding: 15px 20px !important;
+  }
+  .apple .grandfather .father .up .second .sibling .elder img {
+    -webkit-transform: translate(70%, 5%) !important;
+            transform: translate(70%, 5%) !important;
+  }
+  .apple .grandfather .father .up .second .sibling .younger img {
+    width: 40px !important;
+    height: 40px !important;
+    top: -45px !important;
+    right: 50px !important;
+  }
+  /************ball*************/
+  .ball .grandmother .mother {
+    height: 500px;
+  }
+  .ball .grandmother .mother .down .forth {
+    padding-right: 30px !important;
+  }
+  .ball .grandmother .mother .down .forth .btn,
+  .chat .grandfather .father .banner button {
+    padding: 10px 10px !important;
+  }
+  .ball .grandmother .mother .down .third .sibling .elder img {
+    right: 30% !important;
+    -webkit-transform: translate(-5%, -20%) !important;
+            transform: translate(-5%, -20%) !important;
+  }
+  .ball .grandmother .mother .down .third .sibling .younger img {
+    width: 40px !important;
+    height: 40px !important;
+    left: 40px !important;
+    top: 100px !important;
+  }
+  /************course*************/
+  .course .grandfather .father {
+    top: 1200px !important;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 0px 30px;
+  }
+  .course .grandfather .father .design .card_anim h3 {
+    top: 200px;
+    left: 80px !important;
+  }
+  .course .grandfather .father .design .card_anim h1 {
+    bottom: 150px;
+  }
+  /************chat*************/
+  .chat .grandfather .father {
+    top: 3200px !important;
+    left: 50% !important;
+    padding: 0px 30px !important;
+  }
+  .chat .banner h1 {
+    font-size: 30px !important;
+    top: 22px !important;
+    left: 40px !important;
+  }
+  .chat .grandfather .father .banner button {
+    -webkit-transform: translate(25%, -45%) !important;
+            transform: translate(25%, -45%) !important;
+  }
+  /************footer*************/
+  footer .grandfather .father {
+    top: 3300px !important;
+    padding: 40px;
+    width: 90%;
+    left: 3%;
+  }
+  footer .grandfather .father p {
+    font-size: 30px;
+  }
+  footer .grandfather .father ul img {
+    margin-bottom: 10px !important;
+  }
+}
+
+/****** mobile devices(sm) (below 576px) *******/
 @media (max-width: 575.98px) {
   .apple .grandfather .father .up .second .sibling .elder img {
     width: 50%;
@@ -62,18 +159,18 @@
   .chat .grandfather .father {
     position: absolute;
     width: 100%;
-    top: 3400px;
+    top: 3500px;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .chat .banner h1 {
-    font-size: 40px !important;
-    top: 35px !important;
-    left: 48px !important;
+    font-size: 30px !important;
+    top: 22px !important;
+    left: 40px !important;
   }
   footer .grandfather .father {
-    top: 3500px;
+    top: 3600px;
     padding: 40px;
   }
 }
@@ -121,27 +218,6 @@
   .chat .grandfather .father .banner h1 {
     top: 50px;
     left: 80px;
-  }
-}
-
-/****** Extra extra small devices (s6 mobiles, 375px and below) *******/
-@media (min-width: 321px) and (max-width: 376px) {
-  .apple .grandfather .father .up .second .sibling .younger img {
-    width: 50px !important;
-    height: 50px !important;
-    top: -10px !important;
-    right: 15px !important;
-  }
-  .course .grandfather .father {
-    top: 1700px !important;
-  }
-  .chat .grandfather .father {
-    top: 3580px;
-  }
-  .chat .banner h1 {
-    font-size: 25px !important;
-    top: 25px !important;
-    left: 25px !important;
   }
 }
 /*# sourceMappingURL=media.css.map */
