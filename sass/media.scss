@@ -5,7 +5,7 @@
   .ball .grandmother .mother .down .forth h1 {
     font-size: 30px !important;
   }
-  .apple .grandfather .father .up .first span {
+  .apple .grandfather .father .up .first strong {
     font-size: 40px !important;
   }
   .apple .grandfather .father .up .first p,
@@ -14,7 +14,7 @@
   }
   .apple .grandfather .father .up .first .btn,
   .ball .grandmother .mother .down .forth .btn,
-  .chat .grandfather .father .banner button {
+  .chat .grandfather .father .banner .button {
     padding: 15px 20px !important;
   }
   .apple .grandfather .father .up .second .sibling .elder img {
@@ -34,19 +34,21 @@
   .ball .grandmother .mother .down .forth {
     padding-right: 30px !important;
   }
-  .ball .grandmother .mother .down .forth .btn,
-  .chat .grandfather .father .banner button {
+  .ball .grandmother .mother .down .forth .button {
     padding: 10px 10px !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(25%, -20%) !important;
   }
   .ball .grandmother .mother .down .third .sibling .elder img {
     right: 30% !important;
-    transform: translate(-5%, -20%) !important;
+    transform: translate(10%, -45%) !important;
   }
   .ball .grandmother .mother .down .third .sibling .younger img {
     width: 40px !important;
     height: 40px !important;
-    left: 40px !important;
-    top: 100px !important;
+    left: 80px !important;
+    top: 65px !important;
   }
 
   /************course*************/
@@ -73,11 +75,11 @@
 
   .chat .banner h1 {
     font-size: 30px !important;
-    top: 22px !important;
-    left: 40px !important;
+    top: 15px !important;
+    left: 80px !important;
   }
-  .chat .grandfather .father .banner button {
-    transform: translate(25%, -45%) !important;
+  .chat .grandfather .father .banner .button {
+    transform: translate(10%, 30%) !important;
   }
   /************footer*************/
   footer .grandfather .father {
@@ -115,14 +117,20 @@
     top: 50%;
     right: 0%;
     width: 50%;
-    transform: translate(-5%, -75%);
+    transform: translate(-40%, -65%);
   }
 
   .ball .grandmother .mother .down .third .sibling .younger img {
     width: 60px;
     height: 60px;
-    left: 190px;
-    top: 10px;
+    left: 120px;
+    top: 30px;
+  }
+  .ball .grandmother .mother .down .forth .button {
+    padding: 10px 10px !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -70%);
   }
   .apple .grandfather .father .up .first h1,
   .ball .grandmother .mother .down .forth h1 {
@@ -139,7 +147,7 @@
     order: 0;
   }
   .course .grandfather .father {
-    top: 1500px;
+    top: 1600px;
   }
 
   .card_anim {
@@ -153,6 +161,12 @@
     &:focus h3 {
       opacity: 0;
     }
+  }
+
+  .chat .grandfather .father .banner .button {
+    top: 50%;
+    right: 25%;
+    transform: translate(0%, 85%);
   }
 
   .chat .grandfather .father {

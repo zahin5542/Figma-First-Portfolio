@@ -72,11 +72,11 @@ $themeColor: #fff;
   color: #ffffff;
   text-align: center;
   font-size: 28px;
-  padding: 20px;
+  padding: 5px;
   width: 200px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 15px 0px;
 
   span {
     cursor: pointer;
@@ -478,7 +478,7 @@ header {
           position: absolute;
           top: 50%;
           right: 20%;
-          transform: translate(20%, -50%);
+          transform: translate(20%, -80%);
         }
       }
     }
