@@ -68,13 +68,53 @@ li {
   font-family: "Poppins", sans-serif !important;
 }
 
-.apple .grandfather .father .up .first .btn, .ball .grandmother .mother .down .forth .btn, .chat .grandfather .father .banner button {
-  background-color: #dc3545 !important;
-  padding: 20px 30px;
-  border: 0;
-  border-radius: 10px;
-  color: white;
-  letter-spacing: 2.5px;
+.apple .grandfather .father .up .first .button, .ball .grandmother .mother .down .forth .button, .chat .grandfather .father .banner .button {
+  border-radius: 4px;
+  background-color: #dc3545;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.apple .grandfather .father .up .first .button span, .ball .grandmother .mother .down .forth .button span, .chat .grandfather .father .banner .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.apple .grandfather .father .up .first .button span::after, .ball .grandmother .mother .down .forth .button span::after, .chat .grandfather .father .banner .button span::after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.apple .grandfather .father .up .first .button:hover span, .ball .grandmother .mother .down .forth .button:hover span, .chat .grandfather .father .banner .button:hover span {
+  padding-right: 25px;
+}
+
+.apple .grandfather .father .up .first .button:hover span:after, .ball .grandmother .mother .down .forth .button:hover span:after, .chat .grandfather .father .banner .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.apple .grandfather .father .up .first .button:hover, .ball .grandmother .mother .down .forth .button:hover, .chat .grandfather .father .banner .button:hover, .apple .grandfather .father .up .first .button:focus, .ball .grandmother .mother .down .forth .button:focus, .chat .grandfather .father .banner .button:focus {
+  color: #fff;
+  background: black;
 }
 
 .course .grandfather .father .design .card_anim .box img {
@@ -184,7 +224,7 @@ header .navbar ul .nav-link:hover {
   margin: 150px 0px;
 }
 
-.apple .grandfather .father .up .first span {
+.apple .grandfather .father .up .first strong {
   text-transform: uppercase;
   font-size: 75px;
   font-weight: 700;
@@ -279,7 +319,12 @@ header .navbar ul .nav-link:hover {
   padding: 20px 10px;
 }
 
-.ball .grandmother .mother .down .forth .btn span .fas {
+.ball .grandmother .mother .down .forth .button:hover, .ball .grandmother .mother .down .forth .button:focus {
+  color: #fff;
+  background: black;
+}
+
+.ball .grandmother .mother .down .forth .button span .fas {
   color: #fff !important;
   font-size: 20px;
 }
@@ -461,6 +506,7 @@ header .navbar ul .nav-link:hover {
 }
 
 .chat .grandfather .father {
+  z-index: 9999;
   position: absolute;
   width: 100%;
   top: 2100px;
@@ -486,23 +532,12 @@ header .navbar ul .nav-link:hover {
   left: 120px;
 }
 
-.chat .grandfather .father .banner button {
+.chat .grandfather .father .banner .button {
   position: absolute;
   top: 50%;
   right: 20%;
   -webkit-transform: translate(20%, -50%);
           transform: translate(20%, -50%);
-  -webkit-transition: all 0.4s ease and out;
-  transition: all 0.4s ease and out;
-}
-
-.chat .grandfather .father .banner button a {
-  color: #fff;
-}
-
-.chat .grandfather .father .banner button:hover {
-  -webkit-transform: translate(20%, -60%);
-          transform: translate(20%, -60%);
 }
 
 footer .grandfather {
