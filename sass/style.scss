@@ -520,4 +520,8 @@ footer {
       }
     }
   }
+  .copyRight {
+    @extend %flex;
+    text-align: center;
+  }
 }

@@ -37,7 +37,7 @@ li {
   --bs-gutter-y: 0;
 }
 
-.apple .grandfather .father .up, .ball .grandmother .mother .down, .course .grandfather .father .heading, footer .grandfather .father ul {
+.apple .grandfather .father .up, .ball .grandmother .mother .down, .course .grandfather .father .heading, footer .grandfather .father ul, footer .copyRight {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,5 +575,9 @@ footer .grandfather .father ul li {
 footer .grandfather .father ul img {
   width: 50%;
   margin: auto;
+}
+
+footer .copyRight {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
